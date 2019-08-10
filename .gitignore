@@ -87,3 +87,4 @@ public/picture/*
 !public/picture/.gitkeep
 
 .note
+server/config/*
