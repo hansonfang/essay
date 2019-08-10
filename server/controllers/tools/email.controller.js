@@ -23,6 +23,8 @@ getEmailOption().then(ret => {
       pass: ret.value.pass,
     },
   })
+}).catch(e=>{
+  console.error(e)
 })
 
 exports.postEmail = async (req, res, next) => {
