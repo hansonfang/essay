@@ -5,7 +5,7 @@
   "author": "wmui",
   "private": true,
   "scripts": {
-    "deploy": "pm2 deploy ecosystem.config.js production",
+    "deploy": "pm2 start npm --name \"essay\" -- start",
     "server": "cross-env NODE_ENV=development nodemon server/server.js --watch server",
     "test": "cross-env NODE_ENV=test nodemon --watch ./test --exec mocha",
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
